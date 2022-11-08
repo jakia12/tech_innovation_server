@@ -3,8 +3,15 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-//cors 
+//require mongodb
+const { MongoClient, ServerApiVersion } = require('mongodb');
+
+
+//require cors 
 const cors = require('cors');
+
+//require dotenv
+require('dotenv').config();
 
 //middlewire
 
@@ -20,6 +27,16 @@ app.get('/', (req, res) => {
 
 
 //mongod db integration
+
+const client = new MongoClient(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
+async function run() {
+    const serviceCollection = client.db('it-innovation').collection('services');
+
+
+}
+
+run().catch(err => console.log(err))
 
 app.listen(port, () => {
     console.log(`server is running on ${port}`);
