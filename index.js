@@ -63,6 +63,23 @@ async function run() {
         res.send(result);
     })
 
+    //get review data by id query
+    app.get('/reviews', async (req, res) => {
+        let query = {};
+        if (req.query.reviewId) {
+            query = {
+                reviewId: req.query.reviewId
+            }
+        };
+
+        const cursor = reviewCollection.find(query);
+        const reviews = await cursor.sort({ reviewDate: -1 }).toArray();
+        console.log(reviews);
+        res.send(reviews);
+
+
+    });
+
 
 }
 
