@@ -2,6 +2,7 @@
     {
         "category": "Web Design",
         "img": "https://i.ibb.co/qrzMkYj/web-desgin.jpg",
+        "price": "69",
         "title": "Web design services to empower the web design technology",
         "description": "Tech Innovation offers best web design service towards it’s client. When we are designing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -18,6 +19,7 @@
     {
         "category": "Web Development",
         "img": "https://i.ibb.co/M26XWs2/web-dev.jpg",
+        "price": "123",
         "title": "Web development services to empower the web development technology",
         "description": "Tech Innovation offers best web development service towards it’s client. When we are designing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -34,6 +36,7 @@
     {
         "category": "Wordpress Website",
         "img": "https://i.ibb.co/chKDP0D/wordpress.jpg",
+        "price": "99",
         "title": "Wordpress services to empower the wordpress technology",
         "description": "Tech Innovation offers best wordpress service towards it’s client. When we are designing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -50,6 +53,7 @@
     {
         "category": "UI/UX Design",
         "img": "https://i.ibb.co/gmrwK6q/ux.jpg",
+        "price": "230",
         "title": "UI/UX design services to empower the ux design technology",
         "description": "Tech Innovation offers best UI/UX design service towards it’s client. When we are designing best UI/UX for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -66,6 +70,7 @@
     {
         "category": "Graphic Design",
         "img": "https://i.ibb.co/DVKCQXb/graphic-design.jpg",
+        "price": "320",
         "title": "Graphic design services to empower the web design technology",
         "description": "Tech Innovation offers best Graphic design service towards it’s client. When we are designing website for client we are very much client oriented. Since we are Graphic design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -82,6 +87,7 @@
     {
         "category": "App Development",
         "img": "https://i.ibb.co/PcbzPY0/app-dev.jpg",
+        "price": "436",
         "title": "App Development services to empower the web design technology",
         "description": "Tech Innovation offers best App Development service towards it’s client. When we are developing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -98,6 +104,7 @@
     {
         "category": "Digital Marketing",
         "img": "https://i.ibb.co/vzRmRBh/digital.jpg",
+        "price": "140",
         "title": "Digital Marketing services to empower the digital marketing services",
         "description": "Tech Innovation offers best Digital Marketing service towards it’s client. When we are designing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -113,7 +120,8 @@
     },
     {
         "category": "Cyber Security",
-        "img": "https://i.ibb.co/qrzMkYj/web-desgin.jpg",
+        "img": "https://i.ibb.co/3vcnBZ0/cyber-secu.jpg",
+        "price": "532",
         "title": "Cyber Security services to empower the Cyber Security technology",
         "description": "Tech Innovation offers best Cyber Security service towards it’s client. When we are designing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
@@ -129,9 +137,10 @@
     },
     {
         "category": "SEO",
-        "img": "https://i.ibb.co/qrzMkYj/web-desgin.jpg",
+        "img": "https://i.ibb.co/jTx9DLN/seo.jpg",
+        "price": "210",
         "title": "SEO services to empower the SEO service",
-        "description": "Tech Innovation offers best web design service towards it’s client. When we are designing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
+        "description": "Tech Innovation offers best seo service towards it’s client. When we are designing website for client we are very much client oriented. Since we are website design company, we focus on our client requirements to fulfill the optimal level of satisfaction. In this regards our moto is happy client, healthy business.We now have a team of highly modern professionals providing you with gets instant results to rise in the highly competitive market inside your market. We will help you to raise your visibility in all the major search engines like google by increasing keyword ranks and boosting your real-time website visitors with plenty of backlinks which are always done through White Hat techniques.",
         "features_heading": "Extraordinary service features",
         "features_list": [
             "Analysis of your current website.",
