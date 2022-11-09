@@ -70,7 +70,11 @@ async function run() {
             query = {
                 reviewId: req.query.reviewId
             }
-        };
+        } else if (req.query.email) {
+            query = {
+                email: req.query.email
+            }
+        }
 
         const cursor = reviewCollection.find(query);
         const reviews = await cursor.sort({ reviewDate: -1 }).toArray();
