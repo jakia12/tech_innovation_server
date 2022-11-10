@@ -6,10 +6,12 @@ const port = process.env.PORT || 5000;
 //require mongodb
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
+//require json web token
+const jwt = require('jsonwebtoken');
 
 //require cors 
 const cors = require('cors');
-const { query } = require('express');
+// const { query } = require('express');
 
 //require dotenv
 require('dotenv').config();
@@ -31,11 +33,44 @@ app.get('/', (req, res) => {
 
 const client = new MongoClient(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
+//verfify jwt 
+
+function verifyjwt(req, res, next) {
+    const authHeader = req.headers.authorization;
+    console.log(authHeader);
+
+    // if (!authHeader) {
+    //     return res.status(401).send({ message: 'unauthorized access' });
+    // }
+    // const token = authHeader.split(' ')[1];
+
+    // jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, function (err, decoded) {
+    //     if (err) {
+    //         return res.status(403).send({ message: 'Forbidden access' });
+    //     }
+    //     req.decoded = decoded;
+    //     
+    // })
+    next();
+
+}
+
+
 async function run() {
     const serviceCollection = client.db('it-innovation').collection('services');
 
     //review collection
     const reviewCollection = client.db('it-innovation').collection('reviews');
+
+
+    //jwt authentication
+    // app.post('/jwt', (req, res) => {
+    //     const user = req.body;
+
+    //     const token = jwt.sign(user, process.env.ACCES_TOKEN_SECRET, { expiresIn: '1d' });
+
+    //     res.send({ token });
+    // });
 
     //get service data from the database
     app.get('/services', async (req, res) => {
@@ -46,6 +81,16 @@ async function run() {
         res.send(services);
 
     });
+
+    //insert services to the database 
+    app.post('/services', async (req, res) => {
+        const service = req.body;
+        console.log(service);
+        const result = await serviceCollection.insertOne(service);
+        res.send(result);
+    });
+
+
 
     //get single service route
     app.get('/services/:id', async (req, res) => {
@@ -59,14 +104,18 @@ async function run() {
     //review data insert to the database
     app.post('/reviews', async (req, res) => {
         const review = req.body;
-        console.log(review);
+
         const result = await reviewCollection.insertOne(review);
         res.send(result);
     })
 
     //get review data by id query
     app.get('/reviews', async (req, res) => {
+        // console.log(req.headers.authorization);
+
         let query = {};
+
+
         if (req.query.reviewId) {
             query = {
                 reviewId: req.query.reviewId
@@ -77,9 +126,10 @@ async function run() {
             }
         }
 
+
         const cursor = reviewCollection.find(query);
         const reviews = await cursor.sort({ reviewDate: -1 }).toArray();
-        console.log(reviews);
+        // console.log(reviews);
         res.send(reviews);
 
 
